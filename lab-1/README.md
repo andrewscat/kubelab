@@ -40,5 +40,5 @@ kubectl exec -ti nginx-1 -- curl --connect-timeout 2 -s nginx-2-web
 kubectl exec -ti nginx-1 -- curl --connect-timeout 2 -s nginx-1:8081
 kubectl exec -ti nginx-2 -- curl --connect-timeout 2 -s nginx-1-web
 kubectl exec -ti nginx-2 -- curl --connect-timeout 2 -s nginx-2-web
-kubectl exec -ti nginx-2 -- curl --connect-timeout 2 -s nginx-1:8082
+kubectl exec -ti nginx-2 -- curl --connect-timeout 2 -s nginx-2:8082
 ```
